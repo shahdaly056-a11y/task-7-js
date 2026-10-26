@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <form id="orderForm">
+        <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required min="3" max="10">
+    <p class="error" id="nameError"></p> 
+    </div>
+
+        <div class="form-group">
+    <label for="tel">Phone:</label>
+    <input type="tel" id="phone" name="phone" required placeholder="01xxxxxxxxx">
+    <p class="error" id="phoneError"></p>
+        </div>
+
+            <div class="form-group">
+    <label for="product">product:</label>
+    <select id="product" >
+        <option value="">select order</option>
+        <option value="espresso">Esspresso-45Eg</option>
+        <option value="latte">latte-65Eg</option>
+        <option value="croissant">crossaint-40Eg</option>
+    </select>
+    <p class="error" id="productError"></p>
+    </div>
+
+        <div class="form-group">
+    <label for="number">quantity</label>
+    <input type="number" id="quantity" name="quantity" placeholder="1 to 10">
+    <p class="error" id="quantityError"></p>
+    </div>
+
+    <div id="orders">
+
+    </div>
+    <button type="submit">order</button>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+    <script src="./app.js">defer</script>
+
+</body>
+</html>
